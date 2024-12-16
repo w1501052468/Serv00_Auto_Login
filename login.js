@@ -9,7 +9,7 @@ const puppeteer = require('puppeteer');
   for (const account of accounts) {
     const { username, password } = account;
 
-    const browser = await puppeteer.launch({ headless: false });
+    const browser = await puppeteer.launch();
     const page = await browser.newPage();
 
     try {
